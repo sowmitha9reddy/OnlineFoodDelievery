@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,700;1,300&family=Nunito:wght@400;700&display=swap');
+:root{
+    --green:#f21212d0;
+    --black:#010715;
+    --light-color:#160202;
+    --box-shadow:0 .5rem 1.5rem  rgba(0, 0, 0, 0);   
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html{
+    font-size: 65.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    
+
+}
+section{
+    padding:.5rem 1%;
+
+}
+section:nth-child(even){
+    background: #fffdfd;
+}
+
+section{
+padding: .5rem 1%;
+}
+.btn{
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2em solid var(--green);
+    color:var(--green);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+
+    
+    z-index: 0;
+    margin-top: 1rem;
+}
+.btn::before{
+    content: center;
+    position: relative;
+    top: 0; right: 0;
+    width: 100%;
+    height:100%;
+    background: var(--white);
+    transition:.3s linear;
+    z-index: -1;
+    text-align: center;
+
+}
+
+.sub-heading{
+    text-align: center;
+    color:var(--red);
+    font-size:  3rem;
+    padding-top:7rem;
+
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fffdfd;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1000;
+    box-shadow:var(--box-shadow);
+    
+    
+}
+
+header .logo{
+    color:var(--black);
+    font-size: 3.9rem;
+    font-weight:bold;
+    font-family:cursive;
+}
+header .logo i{
+    color: var(--green);
+}
+    
+    
+  
+
+header .navbar a{
+    font-size: 2.2rem;
+    border-radius: 2.5rem;
+    padding: .5rem  1.5rem;
+    color: var(--light-color);
+    font-style: var(--light-color)var(--box-shadow);
+
+}
+
+header  .navbar  a:hover{
+    color: hsl(0, 88%, 3%);
+    background:var(--green);
+}
+
+header  .icons i,
+header  .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: .5rem;
+    line-height: 2.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 4.7rem;
+    color:var(--black);
+    border-radius: 10%;
+    background:#eee;
+}
+
+
+
+.Biryani .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+    gap:2.8rem;
+}
+.Biryani .box-container .box{
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;   
+}
+.Biryani .box-container .box .fa-heart,
+.Biryani .box-container .box .fa-eye{
+    position: absolute;
+    top:1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+.Biryani .box-container .box .fa-heart:hover,
+.Biryani.box-container .box .fa-eye:hover{
+    background:var(--green);
+    color: #fff;
+}
+.Biryani .box-container .box img{
+    height: 17rem;
+    margin: 1 rem 0;
+}
+.Biryani .box-container .box h3{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+.Biryani .box-container .box .stars{
+   padding: 1rem 0;
+}
+.Biryani .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: var(--green);
+}
+.Biryani .box-container .box span{
+    color: var(--black);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+.Starters .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+    gap:2.8rem;
+}
+.Starters .box-container .box{
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;   
+}
+.Starters .box-container .box .fa-heart,
+.Starters .box-container .box .fa-eye{
+    position: absolute;
+    top:1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+.Starters .box-container .box .fa-heart:hover,
+.Starters.box-container .box .fa-eye:hover{
+    background:var(--green);
+    color: #fff;
+}
+.Starters .box-container .box img{
+    height: 17rem;
+    margin: 1 rem 0;
+}
+.Starters .box-container .box h3{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+.Starters .box-container .box .stars{
+   padding: 1rem 0;
+}
+.Starters .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: var(--green);
+}
+.Starters .box-container .box span{
+    color: var(--black);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+.Currys .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+    gap:2.8rem;
+}
+.Currys .box-container .box{
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;   
+}
+.Currys .box-container .box .fa-heart,
+.Currys .box-container .box .fa-eye{
+    position: absolute;
+    top:1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+.Currys .box-container .box .fa-heart:hover,
+.Currys .box-container .box .fa-eye:hover{
+    background:var(--green);
+    color: #fff;
+}
+.Currys .box-container .box img{
+    height: 17rem;
+    margin: 1 rem 0;
+}
+.Currys .box-container .box h3{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+.Currys  .box-container .box .stars{
+   padding: 1rem 0;
+}
+.Currys .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: var(--green);
+}
+.Currys .box-container .box span{
+    color: var(--black);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
